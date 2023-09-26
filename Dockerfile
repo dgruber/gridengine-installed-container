@@ -14,7 +14,7 @@ RUN yum install -y hwloc gridengine gridengine-execd gridengine-qmaster gridengi
 COPY auto_install_template /opt/sge-helper
 
 # must be provided as external volume
-ENV SGE_ROOT=/opt/sge
+ENV SGE_ROOT=/opt/sge-install
 ENV LD_LIBRARY_PATH $SGE_ROOT/lib/lx-amd64
 
 COPY install.sh /opt/sge-helper/install.sh
